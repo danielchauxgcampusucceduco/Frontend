@@ -2,7 +2,7 @@
 
 **Sistema de monitoreo de microservicios con Proxy de auditoría y logging** — Frontend.
 
-Dashboard de observabilidad en tiempo real (SPA en **React 18 + Vite + TypeScript + Tailwind CSS + Recharts + Lucide**) que consume la API [`microservice-logging-proxy-api`](../microservice-logging-proxy-api), desplegada en Railway. Muestra en vivo lo que registra el **`LoggingProxy`** de cada microservicio: volumen, tasas de éxito y error, latencias, uso de caché, inicialización diferida y el detalle completo de cada llamada auditada.
+Dashboard de observabilidad en tiempo real (SPA en **React 18 + Vite + TypeScript + Tailwind CSS + Recharts + Lucide**) que consume la API [`Backend`](https://github.com/danielchauxgcampusucceduco/Backend), desplegada en Railway. Muestra en vivo lo que registra el **`LoggingProxy`** de cada microservicio: volumen, tasas de éxito y error, latencias, uso de caché, inicialización diferida y el detalle completo de cada llamada auditada.
 
 > Proyecto académico — Ingeniería de Software, 4.º semestre. Tema: **Patrón de Diseño Estructural Proxy**.
 
