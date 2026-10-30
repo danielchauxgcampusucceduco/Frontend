@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-carbon-950 font-sans text-carbon-200 antialiased;
+    background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(245, 185, 66, 0.07), transparent 70%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-gold-500/30 text-white;
+  }
+
+  input[type='datetime-local']::-webkit-calendar-picker-indicator {
+    filter: invert(0.75);
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-carbon-700/70 bg-carbon-900/80 shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset] backdrop-blur;
+  }
+
+  .panel-title {
+    @apply flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-carbon-300;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-carbon-700 bg-carbon-850 px-3 py-2 text-sm text-carbon-200 outline-none transition placeholder:text-carbon-500 focus:border-gold-500/70 focus:ring-2 focus:ring-gold-500/20;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-gold-400 text-carbon-950 hover:bg-gold-300 active:bg-gold-500;
+  }
+
+  .btn-ghost {
+    @apply btn border border-carbon-700 bg-carbon-850 text-carbon-200 hover:border-carbon-500 hover:bg-carbon-800;
+  }
+
+  .btn-danger {
+    @apply btn border border-red-500/40 bg-red-500/10 text-red-300 hover:bg-red-500/20;
+  }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #34343d;
+  border-radius: 8px;
+}
